@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 
     <div class="">
       <nav id="navbar">
@@ -16,7 +16,6 @@
           <img src="./assets/logo.png" id="logo" alt="BTGen Logo">
           <p>
             The web development boilerplate CLI generator tool.
-
           </p>
         </header>
         <a class="nav-link" href="#BTGen">BTGen</a>
@@ -28,6 +27,8 @@
         <a class="nav-link" href="#Vuepage">Vuepage</a>
         <a class="nav-link" href="#Reactpage">Reactpage</a>
         <a class="nav-link" href="#Expressapp">Expressapp</a>
+        <a class="nav-link" href="#Angularpage">Angularpage</a>
+        <a class="nav-link" href="#Electronapp">Electronapp</a>
         <a class="nav-link" href="#Upcomming">Upcomming</a>
       </nav>
       <main id="main-doc">
@@ -37,7 +38,7 @@
               BTGen
             </h1>
           </header>
-          <b>BTGen v0.1.2</b>
+          <b>BTGen v0.1.4</b>
           <p>
             <q>The web development boilerplate CLI generator tool.</q>
           </p>
@@ -93,7 +94,7 @@
             To use a template, the command structure is the following:
           </p>
           <code>
-            $ <var>btgen</var> &lt;template-name&gt; &lt;project-name&gt;
+            $ <var>btgen</var> &lt;template-name&gt; &lt;project-name&gt; [options]
           </code>
           <p>If you want to create a simple html + css + javascript/jquery webpage, and the project's name is fancy-site, you'll need this command:</p>
           <code>
@@ -115,7 +116,14 @@
               <li>vuepage</li>
               <li>reactpage</li>
               <li>expressapp</li>
+              <li>angularpage</li>
+              <li>electronapp</li>
             </ul>
+          </p>
+          <p class="note">
+            Each template can take several options to change the result boilerplate, to see the available options use this:
+            <br>
+            <code><var>btgen</var> &lt;template-name&gt; --help -v </code>
           </p>
         </section>
         <section class="main-section" id="Webpage">
@@ -127,7 +135,7 @@
           <hr>
           <h4>Command structure</h4>
           <code>
-            $ <var>btgen</var> webpage &lt;project-name&gt;
+            $ <var>btgen</var> webpage &lt;project-name&gt; [options]
           </code>
           <hr>
           <h4>Project folder structure</h4>
@@ -177,7 +185,7 @@
           <hr>
           <h4>Command structure</h4>
           <code>
-            $ <var>btgen</var> bootstrap &lt;project-name&gt;
+            $ <var>btgen</var> bootstrap &lt;project-name&gt; [options]
           </code>
           <hr>
           <h4>Project folder structure</h4>
@@ -235,7 +243,7 @@
           <hr>
           <h4>Command structure</h4>
           <code>
-            $ <var>btgen</var> webgame &lt;project-name&gt;
+            $ <var>btgen</var> webgame &lt;project-name&gt; [options]
           </code>
           <hr>
           <h4>Project folder structure</h4>
@@ -297,7 +305,7 @@
           <hr>
           <h4>Command structure</h4>
           <code>
-            $ <var>btgen</var> vuepage &lt;project-name&gt;
+            $ <var>btgen</var> vuepage &lt;project-name&gt; [options]
           </code>
           <hr>
           <h4>Project folder structure</h4>
@@ -350,7 +358,7 @@
           <hr>
           <h4>Command structure</h4>
           <code>
-            $ <var>btgen</var> reactpage &lt;project-name&gt;
+            $ <var>btgen</var> reactpage &lt;project-name&gt; [options]
           </code>
           <hr>
           <h4>Project folder structure</h4>
@@ -405,7 +413,7 @@
           <hr>
           <h4>Command structure</h4>
           <code>
-            $ <var>btgen</var> expressapp &lt;project-name&gt;
+            $ <var>btgen</var> expressapp &lt;project-name&gt; [options]
           </code>
           <hr>
           <h4>Project folder structure</h4>
@@ -471,6 +479,136 @@
             </ul>
           </p>
         </section>
+
+        <section class="main-section" id="Angularpage">
+          <header><h2>Angularpage</h2></header>
+          <h4>Description</h4>
+          <p>
+            Create a simple webpage with angularJS with 1.8.x.
+          </p>
+          <hr>
+          <h4>Command structure</h4>
+          <code>
+            $ <var>btgen</var> angularpage &lt;project-name&gt; [options]
+          </code>
+          <hr>
+          <h4>Project folder structure</h4>
+          <p>
+            <ul class="folder-structure">
+              <li>
+                &lt;project-name&gt;
+                <ul>
+                  <li>
+                    css/
+                    <ul>
+                      <li>vendor
+                        <ul>
+                          <li>nvk.reset.min.css</li>
+                        </ul>
+                      </li>
+                      <li>
+                        master.css
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    images/
+                  </li>
+                  <li>
+                    js/
+                    <ul>
+                      <li>
+                        vendor/
+                        <ul>
+                          <li>angular.js</li>
+                          <li>angular.min.js</li>
+                          <li>jquery-3.5.1.js</li>
+                          <li>jquery-3.5.1.min.js</li>
+                        </ul>
+                      </li>
+                      <li>main.js</li>
+                    </ul>
+                  </li>
+                  <li>404.html</li>
+                  <li>humans.txt</li>
+                  <li>index.html</li>
+                  <li>robots.txt</li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+        </section>
+        
+        <section class="main-section" id="Electronapp">
+          <header><h2>Electronapp</h2></header>
+          <h4>Description</h4>
+          <p>
+            Create a simple yet fully customizable electron application.
+          </p>
+          <hr>
+          <h4>Command structure</h4>
+          <code>
+            $ <var>btgen</var> electronapp &lt;project-name&gt; [options]
+          </code>
+          <hr>
+          <h4>Project folder structure</h4>
+          <p>
+            <ul class="folder-structure">
+              <li>
+                &lt;project-name&gt;
+                <ul>
+                  <li>app/
+                    <ul>
+                      <li>assets/
+                        <ul>
+                          <li>audio/</li>
+                          <li>fonts/</li>
+                          <li>graphics/</li>
+                          <li>json/</li>
+                        </ul>
+                      </li>
+                      <li>lib/
+                        <ul>
+                          <li>vendor/
+                            <ul>
+                              <li>pouchdb.js</li>
+                              <li>pouchdb-7.2.1.min.js</li>
+                            </ul>
+                          </li>
+                          <li>helper.js</li>
+                        </ul>
+                      </li>
+                      <li>scripts/
+                        <ul>
+                          <li>vendor/
+                            <ul>
+                              <li>jquery-3.5.1.min.js</li>
+                            </ul>
+                          </li>
+                          <li>behavior.js</li>
+                        </ul>
+                      </li>
+                      <li>styles/
+                        <ul>
+                          <li>vendor/
+                            <ul>
+                              <li>nvk.reset.min.js</li>
+                            </ul>
+                          </li>
+                          <li>master.js</li>
+                        </ul>
+                      </li>
+                      <li>index.html</li>
+                      <li>index.js</li>
+                    </ul>
+                    <li>build/</li>
+                    <li>package.json</li>
+                  </li>
+                </ul>
+            </ul>
+          </p>
+        </section>
+
         <section class="main-section" id="Upcomming">
           <header><h2>Upcomming</h2></header>
           <p>

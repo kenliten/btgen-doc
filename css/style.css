@@ -42,13 +42,14 @@ ol li, ul li{
 }
 
 nav{
-    background-color: #ECEFF1;
+    background-color: #fff;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     overflow: auto;
     width: 25%;
+    border-right: 1px solid #B0BEC5;
 }
 
 nav header{
@@ -64,7 +65,7 @@ nav header img{
 .nav-link{
     display: block;
     padding: 8px 16px;
-    border-top: 1px solid #455A64;
+    border-top: 1px solid #B0BEC5;
 }
 
 .nav-link:hover{
@@ -96,6 +97,10 @@ nav header img{
     content: "|__";
     display: inline-block;
     margin-right: 8px;
+}
+
+h3, h4{
+    margin-left: 8px;
 }
 
 @media (max-width: 768px){
